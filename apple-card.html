@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Apple Card | Apple</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/png" href="images/applelogo.png" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+		<link type="text/css" rel="stylesheet" href="main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script>
+	    $(function() {
+	      $('a[href*="#"]:not([href="#"])').click(function() {
+	        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	          var target = $(this.hash);
+	          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	          if (target.length) {
+	            $('html, body').animate({
+	              scrollTop: target.offset().top
+	            }, 1000);
+	            return false;
+	          }
+	        }
+	      });
+	    });
+	  	</script>
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Apple</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="iphone.html">iPhone</a></li>
+						<li><a href="mac.html">Mac</a></li>
+						<li><a href="apple-card.html">Apple Card</a></li>
+						<li><a href="wwdc19.html">WWDC19</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="heading" style=
+		"background: url(images/apple-card.png);
+		background-size: cover;
+		background-repeat: repeat;
+		background-attachment: fixed;
+		min-width: 1300px;">
+			<h1 class="heading-text" style="color: #000; text-shadow: 1px 1px 10px #fff;">This is <img src="images/applelogotrans.png" height="115px;">Card</h1>
+			<h2 class="heading-caption" style="color: #000; text-shadow: 1px 1px 10px #fff; margin: 0px; padding-top: 400px;">A new kind of credit card.<br>Created by Apple, not a bank.</h2>
+		</div>
+
+		<div id="divider"></div>
+
+		<div id="article" style="height: 980px; background-image: linear-gradient(#454747, #000);
+		background-size: cover;
+		background-repeat: repeat;
+		background-attachment: fixed;">
+			<h2 class="article-title" style="letter-spacing: -2px; text-align: left; padding-left: 200px;">The power of iPhone.<br>In a credit card.</h2>
+			<p class="article-caption" style="font-size: 28px;text-align: left;padding-top: 50px;padding-left: 640px; min-width: 0px; width:1200px;">Apple Card completely rethinks everything about the credit card.<br><br>It represents all the things Apple stands for. Like simplicity, transparency, and privacy.<br><br>It builds on the incredible ease and security that millions of people love about Apple Pay.<br><br>And it’s the first card that actually encourages you to pay less interest.<br><br>You can buy things effortlessly, with just your iPhone. Or use the Apple‑designed titanium card anywhere in the world.</p>
+			<img src="images/applecard2.png" width="600px" align="left" style="padding-left: 200px;">
+		</div>
+		</body>
+
+		<div class="footer">
+			<p>Copyright &copy; 2019 Apple, Inc. All copyrights reserved.</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Apple Copy</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/png" href="images/applelogo.png" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+		<link type="text/css" rel="stylesheet" href="main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script>
+	    $(function() {
+	      $('a[href*="#"]:not([href="#"])').click(function() {
+	        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	          var target = $(this.hash);
+	          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	          if (target.length) {
+	            $('html, body').animate({
+	              scrollTop: target.offset().top
+	            }, 1000);
+	            return false;
+	          }
+	        }
+	      });
+	    });
+	  	</script>
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Apple</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#events">iPhone</a></li>
+						<li><a href="#room">Mac</a></li>
+						<li><a href="#subhome2">Apple Card</a></li>
+						<li><a href="#subhome">WWDC19</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div id="index">
+			<a id="index" class="index"></a>
+			<h1 class="index-title">We Think Different.<br>
+			<font size="10">Welcome to Apple.</h1>
+		</div>
+		<div id="subhome">
+			<h3 class="room-text"><img src="images/applelogotrans.png" width="40" height="75" bottom="5em">WWDC19</h3>
+			<h2 class="room-para">
+				<br>Announcing upgraded operating systems for iPhone, Apple Watch, and Mac — and a brand new one for iPad. And introducing the new Mac Pro and Pro Display XDR.<br><br>
+				<font size="4">
+					<a href="wwdc19.html">
+						Learn more
+					</a>
+				</font>
+			</h2>
+		</div>
+		<div id="events">
+			<a id="events" class="index"></a>
+			<div class="container">
+				<h2 class="events-title">Life is Easier on iPhone.</h2>
+				<p class="events-para">And that starts as soon as you turn it on.<br>
+				<font size="5"><a href="iphone.html">Learn more</a></font>
+				</p>
+			</div>
+		</div>
+		<div id="subhome2">
+			<h3 class="room-text"><img src="images/applelogotrans.png" width="40" height="75" bottom="5em">Card</h3>
+			<h2 class="room-para">
+				<br>A new kind of credit card.<br>
+				Created by Apple, not a bank.<br><br>
+				<font size="4">
+					<a href="apple-card.html">
+						Learn more
+					</a>
+				</font>
+			</h2>
+		</div>
+		<div id="room">
+			<a id="room" class="index"></a>
+			<div class="container">
+				<h2 class="events-title">Make the Ultimate Upgrade.</h2>
+				<p class="events-para">To a Mac.<br>
+				<font size="5"><a href="mac.html">Learn more</a></p>
+			</div>
+		</div>
+		<div class="footer">
+			<p>Copyright &copy; 2019 Apple, Inc. All copyrights reserved.</p>
+		</div>
+	</body>
+</html>
